@@ -1,7 +1,6 @@
 let adjust = 0
 let time = ""
-input.onGesture(Gesture.Shake, function on_gesture_shake() {
-    
+input.onGesture(Gesture.Shake, function () {
     let minutes = 0
     let ampm = 0
     let hours = 0
@@ -12,15 +11,12 @@ input.onGesture(Gesture.Shake, function on_gesture_shake() {
         } else if (hours == 0) {
             adjust = 12
         }
-        
     }
-    
-    time = "" + ("" + adjust)
+    time = "" + adjust
     time = "" + time + ":"
     if (minutes < 10) {
         time = "" + time + "0"
     }
-    
     time = "" + time + ("" + minutes)
     if (ampm) {
         if (hours > 11) {
@@ -28,8 +24,6 @@ input.onGesture(Gesture.Shake, function on_gesture_shake() {
         } else {
             time = "" + time + "AM"
         }
-        
     }
-    
     basic.showString(time)
 })
