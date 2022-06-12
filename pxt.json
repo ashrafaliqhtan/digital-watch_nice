@@ -1,5 +1,5 @@
 {
-    "name": "digital-watch",
+    "name": "ساعة رقمية ",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -9,7 +9,8 @@
     "files": [
         "main.ts",
         "README.md",
-        "main.blocks"
+        "main.blocks",
+        "main.py"
     ],
     "testFiles": [
         "test.ts"
@@ -25,5 +26,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "pyprj"
 }
